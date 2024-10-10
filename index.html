@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
         *{
     margin : 0;
     padding: 0;
@@ -51,6 +53,7 @@ body{
 }
 .search button img{
     width: 20px;
+    margin-left: 20px;
 }
 .weather-icon{
     width: 170px;
@@ -91,7 +94,12 @@ body{
     font-size: 30px;
     font-weight: 200;
 }
-    </style>
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+    </style> -->
 </head>
 <body>
     <div class="card">
@@ -104,24 +112,25 @@ body{
             <h1 class="temp">22°C</h1>
             <h2 class="city">New York</h2>
             <div class="details">
-                <div class="col">
+                <div class="col col1">
                     <img src="./images/humidity.png" alt="image">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col2">
                     <img src="./images/wind.png" alt="image">
                     <div>
-                        <p class="wind">15 km/h</p>
-                        <p>Wind speed</p>
+                        <p class="wind">15Km/h</p>
+                        <p>WindSpeed</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
+    <script src="index.js"></script>
+    <!-- <script>
         const apiKey = "0f36fd6374a86bb4c1a6a707e21f83cf"
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
 
@@ -164,6 +173,6 @@ body{
         })
 
 
-    </script>
+    </script> -->
 </body>
 </html>
