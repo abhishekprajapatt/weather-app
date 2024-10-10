@@ -6,100 +6,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        *{
-    margin : 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-body{
-    background: #222;
-}
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-}
-.search{
-    display: flex;
-    flex-direction: row;
-}
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
-}
-.search button{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-.search button img{
-    width: 20px;
-    margin-left: 20px;
-}
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
-}
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-.weather h2{
-    font-size: 40px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-.details{
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-.wind{
-    font-size: 30px;
-    font-weight: 200;
-}
-.humidity{
-    font-size: 30px;
-    font-weight: 200;
-}
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-    </style> -->
 </head>
 <body>
     <div class="card">
@@ -122,57 +28,13 @@ body{
                 <div class="col col2">
                     <img src="./images/wind.png" alt="image">
                     <div>
-                        <p class="wind">15Km/h</p>
-                        <p>WindSpeed</p>
+                        <p class="wind">15 Km/h</p>
+                        <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="index.js"></script>
-    <!-- <script>
-        const apiKey = "0f36fd6374a86bb4c1a6a707e21f83cf"
-        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="
-
-        const searchBox = document.querySelector(".search input");
-        const searchBtn = document.querySelector(".search button");
-        const weatherIcon = document.querySelector(".weather-icon");
-
-        async function checkWeather(city){
-            const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
-            var data  = await response.json();
-            console.log(data);
-            document.querySelector(".city").innerHTML = data.name;
-            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
-            document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-            document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
-
-            if(data.weather[0].main == "Clouds"){
-                weatherIcon.src = "./images/clouds.png";
-            }
-            else if(data.weather[0].main == "Clear"){
-                weatherIcon.src = "./images/clear.png";
-            }
-            else if(data.weather[0].main == "Rain"){
-                weatherIcon.src = "./images/rain.png";
-            }
-            else if(data.weather[0].main == "Drizzle"){
-                weatherIcon.src = "./images/drizzle.png";
-            }
-            else if(data.weather[0].main == "Mist"){
-                weatherIcon.src = "./images/Mist.png";
-            }
-            else if(data.weather[0].main == "Drizzle"){
-                weatherIcon.src = "./images/drizzle.png";
-            }
-
-        }
-        
-        searchBtn.addEventListener("click", () => {
-            checkWeather(searchBox.value);
-        })
-
-
-    </script> -->
 </body>
 </html>
