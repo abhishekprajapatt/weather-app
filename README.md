@@ -33,5 +33,5 @@ This is a simple Weather App built using HTML, CSS, and JavaScript that allows u
 
 ## Screenshot
 
-![image](https://github.com/user-attachments/assets/1ad682e6-56e0-48ae-b175-63a83b290f85)
+![image](https://github.com/user-attachments/assets/b5f74353-3067-4a07-b670-a3b4c09235c7)
 
