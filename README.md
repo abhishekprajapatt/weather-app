@@ -25,12 +25,13 @@ This is a simple Weather App built using HTML, CSS, and JavaScript that allows u
 2. Click on the search button.
 3. The app will fetch weather data and display temperature, humidity, wind speed, and weather icon.
 
-## Screenshot
-
-![image](https://github.com/user-attachments/assets/1ad682e6-56e0-48ae-b175-63a83b290f85)
-
 
 ## Project Link
 
 [Weather App Repository](https://weather-app-gamma-six-41.vercel.app/)
+
+
+## Screenshot
+
+![image](https://github.com/user-attachments/assets/1ad682e6-56e0-48ae-b175-63a83b290f85)
 
